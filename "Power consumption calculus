@@ -1,0 +1,15 @@
+print("Power consumption calculus")
+
+apr=float(input("Please insert valor of the power source in watts(w):"))
+while apr<=0
+    print(" incorrect value! Please insert a positive value")
+    apr=float(input("Enter with the electric power :"))
+t=int(input("Enter with the time (hours) :"))
+kwh=float(input("Enter with the valor of kilowatt hour that cost to you :"))
+pot_kwh=(apr*t)/1000
+
+print(f"Electric power : {apr} W  Khw: {pot_kwh} Kwh")
+print(f"Cost per day: R${kwh*pot_kwh:5.2f} Cost per week : R${(kwh*pot_kwh)*7:5.2f} Cost per month :R${(kwh*pot_kwh)*30:5.2f}")
+input()
+
+
