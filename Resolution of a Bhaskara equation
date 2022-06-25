@@ -1,0 +1,25 @@
+print("Second degree equation")
+a=float(input("Enter a valor for a : "))
+while a==0:
+    print("Please the valor of "a" must be different of zero!")
+    a=float(input("Enter a valor for a : "))
+b=float(input("Enter a valor for b : "))
+c=float(input("Enter a valor for c : "))     
+delta=(b**2)-(4*a*c)
+x1=0
+x2=0
+print(f"delta:{delta}")
+if delta>0:
+    x1=(-b+delta**(1/2))/(2*a)
+    x2=(-b-delta**(1/2))/(2*a)
+    print(f"Two real solutions!")
+    print(f"The roots are x1={x1} e x2={x2}")
+elif delta==0:
+    x1=-b/(2*a)
+    print("Only one real solution! :")
+    print(f"The root is:{x1}")
+
+else:
+    print("Whithout solution!")
+        
+
