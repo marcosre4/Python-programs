@@ -1,0 +1,32 @@
+#Payrool
+salario=float(input("Enter with your salary :R$"))
+ir=0
+inss=0
+sindicato=0
+while salario<=0:
+   print("Incorrect value! Please enter with a positive value:")
+   salario=float(input("Enter with your salary :R$"))
+if salario<=1100:
+    inss=inss+salario*0.075
+    sindicato=sindicato+salario*0.05
+elif salario>1100 and salario<=2203.48:
+    inss=inss+salario*0.09
+    sindicato=sindicato+salario*0.05
+elif salario>2203.49 and salario<=3305.22:
+    inss=inss+salario*0.12
+    sindicato=sindicato+salario*0.05
+elif salario>3305.23 or salario>=6433.57:
+    inss=inss+salario*0.14
+    sindicato=sindicato+salario*0.05
+if salario>2094 and salario<=2826.65:
+    ir=(salario-inss)*0.075-142.80
+elif salario>2826.66 and salario<=3751.05:
+    ir=(salario-inss)*0.15-354.80
+elif salario>3751.06 and salario<=4664.68:
+    ir=(salario-inss)*0.225-636.13
+elif salario>4664.68:
+        ir=(salario-inss)*0.275-869.36
+else:
+            ir=0
+print( f"INSS:R${inss:5.2f} Syndicate: R${sindicato:5.2f} Income tax: R${ir:5.2f} Net salary:R${salario-inss-sindicato-ir:5.2f}")
+       
