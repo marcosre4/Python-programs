@@ -11,5 +11,3 @@ pot_kwh=(apr*t)/1000
 print(f"Electric power : {apr} W  Khw: {pot_kwh} Kwh")
 print(f"Cost per day: R${kwh*pot_kwh:5.2f} Cost per week : R${(kwh*pot_kwh)*7:5.2f} Cost per month :R${(kwh*pot_kwh)*30:5.2f}")
 input()
-
-
