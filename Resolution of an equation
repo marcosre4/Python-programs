@@ -1,9 +1,9 @@
 print("Resolution of an equation")
-tipo=int(input("Choose the type of equation 1) x+a=b / 2)cx+a=b :"))
-while tipo!=1 and tipo!=2:
+type=int(input("Choose the type of equation 1) x+a=b / 2)cx+a=b :"))
+while type!=1 and type!=2:
     print("Please choose only 1 or 2 !")
-    tipo=int(input("Choose the type of equation 1) x+a=b / 2)cx+a=b :"))
-if tipo==1:
+    type=int(input("Choose the type of equation 1) x+a=b / 2)cx+a=b :"))
+if type==1:
       a=float(input("Enter with a valor for a :"))
       b=float(input("Enter with a valor for b :"))
       print(f"The valor of  x is :{b-a}")
